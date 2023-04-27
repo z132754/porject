@@ -1,0 +1,42 @@
+:root{
+    --mycolor001: #a6c2ce;
+    --mycolor002: #9c8f96;
+    --mycolor003: #ebc57c;
+    --mycolor004: #6b799e;
+    --mycolor005: #97baa4;
+    --mycolor006: #5cbb89;
+    --mycolor007: #f4bdc0;
+    --mycolor008: #a36327;
+    --mycolor009: #dea26e;
+    --mycolor010: #fcf4ed;
+    --mycolor011: #d9cfe7;
+    --mycolor012: #c2e6ff;
+    --mycolor013: #d5d2c1;
+}
+
+.demo{
+    width: 90%;
+    border: 2px solid var(--mycolor003);
+    padding: 15px;
+    margin: 15px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+TC:wght@500;700;900&display=swap');
+
+body{
+    font-family: 'Lobster', cursive;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.fw-700{
+    font-weight: 700;
+}
+.fw-900{
+    font-weight: 900;
+}
