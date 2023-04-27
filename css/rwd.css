@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+        
+    width: 80vw;
+    margin: 0 auto;
+}
+.mask{
+    background: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 200px; */
+    position: absolute;
+    transition: all 1s;
+}
+h3{
+    position: absolute;
+    top: 65px;
+}
+
+p{
+    /* width: 100%;
+    height: 100%; */
+    position: absolute;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: transparent; */
+    background-position: center center;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* position: absolute; */
+    /* background-color:#fef55e; */
+    color: black;
+    
+
+    /* -webkit-background-clip: text;
+    font-size: 50px;
+    line-height: 400px;
+    font-weight: bolder;
+    text-align: center; */
+    
+}
+
+
+
+
+.header{
+/* width: 100%; */
+height: 150px;
+margin: 0 auto;
+text-align: center;
+background-color: #84c0e9;
+background-image: url(../images/dessert.avif);
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+.footer{
+
+height: 30px;
+margin: 0 auto;
+clear: both;
+text-align: center;
+
+/* background-color: #fab; */
+}
+.content{
+height: 500px;
+width: 25%;
+float: left;
+text-align: center;
+background-color: #abfa;
+position: relative;
+border-radius: 20px;
+/* line-height: 500px; */
+/* margin-left: 5vw; */
+
+
+}
+.content:nth-child(2){
+background-image: url(../images/dessert01.avif);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+background-color: #ecec84;
+/* animation: animate 2s infinite alternate; */
+}
+.content:nth-child(3){
+background-image: url(../images/dessert02.avif);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+background-color: #ffb69b;
+}
+.content:nth-child(4){
+background-image: url(../images/dessert03.avif);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+background-color: #a299ca;
+}
+.content:nth-child(5){
+background-image: url(../images/dessert04.avif);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+background-color: #7ccaae;
+}
+.header:hover::before{
+    position: absolute;
+    content: '冰品天地來襲';
+    text-align: center;
+    color: #d22d8c;
+}
+
+.content:hover{
+scale: 1.1;
+box-shadow: 0px 20px 10px 5px rgba(255, 255, 255, 0.3);
+}
+.content:hover .mask{
+background-color: transparent;
+}
+.content:hover p{
+/* color: white; */
+display: none;
+}
+
+
+/* @keyframes animate {
+0%{
+    filter: brightness(0.1);
+}
+50%{
+    filter: brightness(0.2);
+}
+100%{
+    filter: brightness(0.3);
+}
+
+} */
+@media screen and (max-width:480px) {
+.content{
+/* height: 500px; */
+width: 100%;
+float: left;
+text-align: center;
+background-color: #abfa;
+position: relative;
+border-radius: 10px;
+/* margin-left: 5vw; */
+
+}
+}
+@media screen and (max-width:768px) and (min-width:481px) {
+.content{
+/* height: 500px; */
+width: 50%;
+float: left;
+text-align: center;
+background-color: #abfa;
+position: relative;
+border-radius: 10px;
+/* margin-left: 5vw; */
+
+}
+}
