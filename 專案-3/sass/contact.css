@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "DynaPuff", cursive;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: black;
+  box-shadow: 3px 3px 5px 1px #757474;
+}
+header div.logo {
+  display: flex;
+  align-items: center;
+  flex: 5 1 400px;
+  margin-left: 2rem;
+}
+header div.logo img {
+  width: 10vw;
+  height: 7vw;
+}
+header nav {
+  flex: 2 1 400px;
+}
+header nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.35rem;
+}
+
+main {
+  min-height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .contact-header {
+  display: inline-flex;
+}
+main .contact-header .contact-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .contact-header .contact-section .contact-info {
+  color: #fff;
+  max-width: 500px;
+  line-height: 65px;
+  padding-left: 50px;
+  font-size: 18px;
+}
+main .contact-header .contact-section .contact-info .contact-info i {
+  margin-right: 20px;
+  font-size: 25px;
+}
+main .contact-header .contact-form {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-right: 15vw;
+}
+main .contact-header .contact-info, main .contact-header .contact-form {
+  flex: 1;
+}
+main .contact-header .contact-info .contact h2, main .contact-header .contact-form .contact h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 35px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+main .contact-header .contact-info .contact input.text-box, main .contact-header .contact-form .contact input.text-box {
+  background: #000;
+  color: #fff;
+  border: none;
+  height: 50px;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+main .contact-header .contact-info .contact input.text-box:first-child, main .contact-header .contact-form .contact input.text-box:first-child {
+  margin-right: 15px;
+}
+main .contact-header .contact-info .contact textarea, main .contact-header .contact-form .contact textarea {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  min-height: 200px;
+  max-height: 400px;
+  resize: vertical;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  opacity: 0.9;
+  display: inline-block;
+}
+main .contact-header .contact-info .contact .send-btn, main .contact-header .contact-form .contact .send-btn {
+  float: left;
+  background: #2e94e3;
+  color: #fff;
+  border: none;
+  width: 120px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  transition-property: background;
+}
+main .contact-header .contact-info .contact .send-btn:hover, main .contact-header .contact-form .contact .send-btn:hover {
+  background: #0582e3;
+}/*# sourceMappingURL=contact.css.map */

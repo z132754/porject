@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "DynaPuff", cursive;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: black;
+  box-shadow: 3px 3px 5px 1px #757474;
+}
+header div.logo {
+  display: flex;
+  align-items: center;
+  flex: 5 1 400px;
+  margin-left: 2rem;
+}
+header div.logo img {
+  width: 10vw;
+  height: 7vw;
+}
+header nav {
+  flex: 2 1 400px;
+}
+header nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.35rem;
+}
+
+main div.picture {
+  width: 80vw;
+  margin: 50px auto;
+  overflow: hidden;
+}
+main div.picture div.content {
+  width: 100%;
+  float: left;
+  padding: 20px;
+}
+main div.picture div.content img {
+  display: block;
+  float: left;
+  max-width: 100%;
+}
+main div.picture div.content div.text {
+  float: right;
+  width: 430px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 40vh;
+  justify-content: space-around;
+  background-color: rgb(0, 0, 0);
+}
+footer div.logo {
+  display: flex;
+  align-items: center;
+}
+footer div.logo img {
+  width: 6vw;
+  height: 6vw;
+}
+footer nav {
+  width: 30%;
+}
+footer nav ul {
+  display: flex;
+  list-style-type: none;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+footer nav ul li {
+  flex-basis: 90px;
+}
+footer nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 0.2rem;
+}
+footer section.links a {
+  margin: 0rem 1rem;
+}
+footer section.links a img {
+  width: 5vw;
+  height: 5vw;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #d3ddde;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #90b9cd;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2f6e98;
+}
+
+@media screen and (max-width: 550px) {
+  header div.logo {
+    margin-left: 0.5rem;
+  }
+  header div.logo img {
+    width: 15vw;
+    height: 15vw;
+  }
+  footer div.logo img {
+    width: 15vw;
+    height: 15vw;
+  }
+  footer section.links {
+    margin-top: 1rem;
+  }
+  footer section.links a img {
+    width: 10vw;
+    height: 10vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  main div.picture .content img {
+    max-width: 100%;
+  }
+}/*# sourceMappingURL=new.css.map */
