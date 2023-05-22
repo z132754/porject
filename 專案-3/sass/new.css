@@ -9,6 +9,13 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
+body {
+  background-image: url(../images/bg1.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -59,8 +66,12 @@ main div.picture div.content img {
   max-width: 100%;
 }
 main div.picture div.content div.text {
-  float: right;
-  width: 430px;
+  float: left;
+  width: 60%;
+  padding: 20px 20px 0px 20px;
+}
+main div.picture div.content div.text p {
+  font-size: 20px;
 }
 
 footer {
