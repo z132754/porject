@@ -1,0 +1,243 @@
+html, body{
+    height: 100%;
+    overflow: hidden;
+}
+
+#universe{
+    background: radial-gradient(#777,#000);
+}
+
+@keyframes starFlash{
+    from{opacity: 1;}
+    to{opacity: 0.3;}
+}
+
+#stars{
+    height: 100%;
+    background-image: url(images/stars.png);
+    background-size: cover;
+    animation: starFlash 3s infinite alternate;
+}
+
+@keyframes sunLight{
+    from{box-shadow: 0 0 45px #f5c91a;}
+    to{box-shadow: 0 0 90px #f5c91a;}
+}
+
+#sun{
+    width: 200px;
+    height: 200px;
+    /* background-color: orange; */
+    background: radial-gradient(#f5c313,#ec7e08);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+    border-radius: 50%;
+    box-shadow: 0 0 45px #f5c91a;
+    animation: sunLight 3s infinite alternate;
+}
+
+
+@keyframes spin{
+    from{transform: rotate(0);}
+    to{transform: rotate(360deg);}
+}
+
+#水星Orbit{
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -150px;
+    border-radius: 50%;
+    animation: spin 20s linear infinite;
+}
+
+#水星{
+    position: absolute;
+    margin-top: -22px;
+    margin-left: -22px;
+    top: 50%;
+    animation: spin 20s linear infinite;
+}
+
+#金星Venus{
+    width: 400px;
+    height: 400px;
+    border: 1px solid red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 50%;
+    animation: spin 25s linear infinite;
+}
+
+#金星{
+    position: absolute;
+    margin-top: -22px;
+    margin-left: -22px;
+    top: 50%;
+    animation: spin 25s linear infinite;
+}
+
+
+#earthOrbit{
+    width: 540px;
+    height: 540px;
+    border: 1px solid red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -270px;
+    margin-left: -270px;
+    border-radius: 50%;
+    animation: spin 30s linear infinite;
+}
+
+#earth{
+    position: absolute;
+    margin-top: -40px;
+    margin-left: -40px;
+    top: 50%;
+    animation: spin 30s linear infinite;
+}
+
+#moonOrbit{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 50%;
+    margin-top: -60px;
+    margin-left: -60px;
+    border: 1px solid red;
+    border-radius: 100%;
+    animation: spin 20s linear infinite;
+}
+
+#moon{
+    width: 30px;
+    height: 30px;
+    background: radial-gradient(#ddd,#888);
+    border-radius: 100%;
+    animation: spin 3s linear infinite;
+}
+
+#moon{
+    position: absolute;
+    margin-top: -20px;
+    margin-left: -20px;
+    top: 50%;
+    animation: spin 3s linear infinite;
+}
+
+#火星Mars{
+    width: 700px;
+    height: 700px;
+    border: 1px solid red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -350px;
+    margin-left: -350px;
+    border-radius: 50%;
+    animation: spin 35s linear infinite;
+}
+
+#火星{
+    position: absolute;
+    margin-top: -22px;
+    margin-left: -22px;
+    top: 50%;
+    animation: spin 35s linear infinite;
+}
+
+#木星Jupider{
+    width: 900px;
+    height: 900px;
+    border: 1px solid red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -450px;
+    margin-left: -450px;
+    border-radius: 50%;
+    animation: spin 40s linear infinite;
+}
+
+#木星{
+    position: absolute;
+    margin-top: -50px;
+    margin-left: -50px;
+    top: 50%;
+    animation: spin 40s linear infinite;
+}
+
+#土星Saturn{
+    width: 1200px;
+    height: 1200px;
+    border: 1px solid red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -600px;
+    margin-left: -600px;
+    border-radius: 50%;
+    animation: spin 45s linear infinite;
+}
+
+#土星{
+    position: absolute;
+    margin-top: -90px;
+    margin-left: -90px;
+    top: 50%;
+    animation: spin 45s linear infinite;
+}
+
+#天王星Uranus{
+    width: 1400px;
+    height: 1400px;
+    border: 1px solid red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -700px;
+    margin-left: -700px;
+    border-radius: 50%;
+    animation: spin 48s linear infinite;
+}
+
+#天王星{
+    position: absolute;
+    margin-top: -30px;
+    margin-left: -30px;
+    top: 50%;
+    animation: spin 48s linear infinite;
+}
+
+#海王星Neptune{
+    width: 1600px;
+    height: 1600px;
+    border: 1px solid red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -800px;
+    margin-left: -800px;
+    border-radius: 50%;
+    animation: spin 50s linear infinite;
+}
+
+#海王星{
+    position: absolute;
+    margin-top: -30px;
+    margin-left: -30px;
+    top: 50%;
+    animation: spin 30s linear infinite;
+}
