@@ -80,8 +80,11 @@
                                 </ul>
                             </li>
                         </ul>
+                        <!-- 按鈕 Model -->
                         <div class="d-flex" role="search">
+                            <!-- 登入 -->
                             <button class="btn btn-outline-warning me-1" data-bs-toggle="modal" data-bs-target="#loginModal">登入</button>
+                            <!-- 註冊 -->
                             <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#registerModal">註冊</button>
                         </div>
                     </div>
@@ -91,7 +94,7 @@
     </section>
 
   
-    <!-- loginModal -->
+    <!-- 跳出 loginModal 的視窗 -->
     <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -100,10 +103,12 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
+                    <!-- 帳號 -->
                     <div class="mb-3">
                         <label for="" class="form-label">帳號</label>
                         <input type="text" class="form-control">
                     </div>
+                    <!-- 密碼 -->
                     <div class="mb-3">
                         <label for="" class="form-label">密碼</label>
                         <input type="password" class="form-control">
@@ -118,7 +123,7 @@
         </div>
     </div>
 
-    <!-- registerModal -->
+    <!-- 跳出 registerModal 的視窗 -->
     <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
@@ -128,6 +133,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="row">
+                        <!-- (left)會員條款 -->
                         <div class="col-md-6">
                             <h2>會員條款</h2>
                             <p>【  會員服務條款  】</p>
@@ -136,23 +142,29 @@
                             <p>●本站保留有審核加入會員資格之權利，另外已加入會員者，本站亦保留有解除其會員資格之權利。</p>    
                             <p>●本會員服務條款之修訂，適用於所有會員，當本站修訂本服務條款時，將於本站上公告。</p>    
                         </div>
+                        <!-- 基本資料 -->
                         <div class="col-md-6">
+                            <!-- 帳號 -->
                             <div class="mb-3">
                                 <label for="" class="form-label">帳號</label>
                                 <input type="text" class="form-control">
                             </div>
+                            <!-- 密碼 -->
                             <div class="mb-3">
                                 <label for="" class="form-label">密碼</label>
                                 <input type="password" class="form-control">
                             </div>
+                            <!-- 確認密碼 -->
                             <div class="mb-3">
                                 <label for="" class="form-label">確認密碼</label>
                                 <input type="password" class="form-control">
                             </div>
+                            <!-- Email -->
                             <div class="mb-3">
                                 <label for="" class="form-label">Email</label>
                                 <input type="email" class="form-control">
                             </div>
+                            <!-- checkbox 同意以上規定 -->
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                 <label class="form-check-label" for="flexCheckDefault">同意以上規定</label>
@@ -364,6 +376,7 @@
     <section>
         <div class="container">
             <div class="row">
+                <!-- 地圖 -->
                 <div class="col-md-6">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14559.183751979968!2d120.60640172105623!3d24.178888374118777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346917e34b7f5d89%3A0x658639bee11e2f27!2z5ou-5Y-D5pyI5rOV5byP55Sc6bue5bGLIDEzIG1vb24gcGF0aXNzZXJpZSDmqrjmqqzloZQg5Y-v6bqX6ZyyIOW3tOaWr-WFiyDpgZTlhYvnk6bojLI!5e0!3m2!1szh-TW!2stw!4v1683855131269!5m2!1szh-TW!2stw" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
@@ -509,10 +522,12 @@
                 $("#name").bind("input propertychange", function (){
                 console.log($(this).val().length);
                 if($(this).val().length > 1 && $(this).val().length < 6 ){
+                    // 成立
                     $(this).removeClass("is-invalid");
                     $(this).addClass("is-valid");
                     flag_name = true;
                 }else{
+                    // 不成立
                     $(this).removeClass("is-valid");
                     $(this).addClass("is-invalid");
                     flag_name = false;
@@ -522,10 +537,12 @@
                 // 手機號碼
                 $("#phone").bind("input propertychange", function (){
                 if($(this).val().length > 9 && $(this).val().length < 11 ){
+                    // 成立
                     $(this).removeClass("is-invalid");
                     $(this).addClass("is-valid");
                     flag_phone = true;
                 }else{
+                    // 不成立
                     $(this).removeClass("is-valid");
                     $(this).addClass("is-invalid");
                     flag_phone = false;
